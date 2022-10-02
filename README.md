@@ -2,6 +2,9 @@
 
 # Monocle Gateway
 
+FORK with focus on rpi and armv7 under containers
+
+
 The [**Monocle Gateway**](https://monoclecam.com/monocle-gateway) service is a small service that runs inside your local/private network to facilitate discovery, secure communication and automation between your IP cameras and the [**Monocle**](https://monoclecam.com) cloud service/platform.  
 
 <center><a href="http://static.monoclecam.com/monocle-gateway-diagram-wide.png" target="_blank"><img src="http://static.monoclecam.com/monocle-gateway-diagram-wide.png" style="max-width: 800px; max-height: 400px;"/></a></center>
