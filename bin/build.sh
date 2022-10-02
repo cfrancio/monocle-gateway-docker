@@ -20,7 +20,7 @@
 # *******************************************************************
 
 # Monocle Gateway Version
-VERSION=v0.0.5
+VERSION=v0.0.4
 
 echo "------------------------------------------------------------"
 echo " MONOCLE GATEWAY :: BUILD DOCKER IMAGE"
