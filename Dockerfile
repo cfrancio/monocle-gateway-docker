@@ -84,6 +84,7 @@ RUN apk update &&      \
 # ---------------------------------------
 RUN if [ "$TARGETARCH" = "amd64" ] ; then wget -c "https://files.monoclecam.com/monocle-gateway/linux/monocle-gateway-alpine-x64-$BUILDVERSION.tar.gz" -O monocle-gateway.tar.gz ; fi
 RUN if [ "$TARGETARCH" = "arm64" ] ; then wget -c "https://files.monoclecam.com/monocle-gateway/linux/monocle-gateway-alpine-arm64-$BUILDVERSION.tar.gz" -O monocle-gateway.tar.gz ; fi
+RUN if [ "$TARGETARCH" = "armv7" ] ; then wget -c "https://files.monoclecam.com/monocle-gateway/linux/monocle-gateway-alpine-armv7-$BUILDVERSION.tar.gz" -O monocle-gateway.tar.gz ; fi
 RUN cd /usr/local/bin/ && \
     tar xvzf /root/monocle-gateway.tar.gz monocle-gateway && \ 
     tar xvzf /root/monocle-gateway.tar.gz monocle-proxy  && \
