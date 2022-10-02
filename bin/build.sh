@@ -40,7 +40,7 @@ docker buildx create --driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=10485760   \
 docker buildx build \
   --build-arg BUILDDATE="$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
   --build-arg BUILDVERSION="$VERSION" \
-  --platform linux/amd64,linux/arm64 \
+  --platform linux/amd64,linux/arm64,linux/armv7 \
   --push \
   --tag monoclecam/monocle-gateway:$VERSION \
   --tag monoclecam/monocle-gateway:latest . $@
